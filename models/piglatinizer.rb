@@ -3,7 +3,6 @@ class PigLatinizer<Sinatra::Base
 
   def initialize(text)
     @text=text
-
   end
 
   def split
