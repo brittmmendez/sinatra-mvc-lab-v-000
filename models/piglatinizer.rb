@@ -1,4 +1,4 @@
-class PigLatinizer
+class PigLatinizer<Sinatra::Base
   attr_reader :text
 
   def initialize(text)
