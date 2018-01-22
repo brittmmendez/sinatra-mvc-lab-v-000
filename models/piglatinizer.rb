@@ -7,9 +7,9 @@ class PigLatinize
 
   def split
     @text.split(" ").collect do |word|
-      if word.start_with?('a','e','i','o','u')  
+      if word.start_with?('a','e','i','o','u')
         "#{word}ay"
-      else 
+      else
         word.split("")
         "#{word[1..-1]}#{word[0]}ay"
       end
