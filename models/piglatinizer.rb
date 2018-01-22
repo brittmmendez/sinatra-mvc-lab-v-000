@@ -8,10 +8,10 @@ class PigLatinizer
   def split
     @text.split(" ").collect do |word|
       if word.start_with?('a','e','i','o','u')
-        "#{word}ay"
+        "#{word}way"
       else
         word.split("")
-        "#{word[1..-1]}#{word[0]}ay"
+        "#{word[1..-1]}#{word[0]}way"
       end
     end
   end
